@@ -12,3 +12,6 @@ fun! s:SelectHTML()
 endfun
 autocmd BufNewFile,BufRead *.html,*.htm,*.nunjucks,*.nunjs,*.njk  call s:SelectHTML()
 autocmd BufNewFile,BufRead *.jinja2,*.j2,*.jinja set ft=jinja
+autocmd BufNewFile,BufRead *.sh.jinja set ft=sh isk-=$
+autocmd BufNewFile,BufRead *.cfg.jinja set ft=cfg
+autocmd BufNewFile,BufRead *.yaml.jinja set ft=yaml
